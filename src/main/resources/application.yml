@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /fortune_services
+spring:
+  profiles:
+    active: local
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: mysecretpassword
